@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int main(){
+  int a = 12,b=15;
+  int *ptr1 = &b;
+  int *ptr = &a;
+  int *c = ptr;
+  cout<<a<<endl;
+  cout<<*ptr<<endl;
+  cout<<ptr<<endl;
+  cout<<c<<endl;
+  cout<<*c<<endl;
+  *ptr =70;
+  *ptr1 =100;
+  cout<<a+b<<endl;
+int y = *ptr+*ptr1;
+  cout<<y<<" "<<&a<<" "<<&b;
+}
